@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="form_table" resource="default" engine="innodb" comment="Yash's Custom Table">
+        <column xsi:type="int" name="id" padding="10" unsigned="true" nullable="false" identity="true" comment="ID" />
+        <column xsi:type="varchar" name="name" nullable="false" comment="Name" />
+        <column xsi:type="varchar" name="gender" nullable="false" comment="Gender" />
+        <!-- <column xsi:type="varchar" name="status" nullable="false" comment="status" /> -->
+        <column xsi:type="varchar" name="email" nullable="false" comment="Email" />
+        <column xsi:type="varchar" name="feedback" nullable="false" length="255" comment="Feedback" />
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id" />
+        </constraint>
+    </table>
+</schema>
